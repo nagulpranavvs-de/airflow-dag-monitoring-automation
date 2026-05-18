@@ -1,0 +1,1 @@
+<html><body><h2>Airflow DAG Monitoring Report</h2><table border='1'><tr><th>DAG</th><th>Status</th><th>Start Time</th></tr>{% for dag in dag_data %}<tr><td>{{ dag.dag_id }}</td><td>{{ dag.state }}</td><td>{{ dag.start_date }}</td></tr>{% endfor %}</table></body></html>
